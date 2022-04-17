@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrowDamageCalculator", "ArrowDamageCalculator.csproj", "{33610E97-589A-499E-9F95-0A5F931B4A3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33610E97-589A-499E-9F95-0A5F931B4A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33610E97-589A-499E-9F95-0A5F931B4A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33610E97-589A-499E-9F95-0A5F931B4A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33610E97-589A-499E-9F95-0A5F931B4A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11B2EB66-85CB-43A8-92E6-9B707837A910}
+	EndGlobalSection
+EndGlobal
