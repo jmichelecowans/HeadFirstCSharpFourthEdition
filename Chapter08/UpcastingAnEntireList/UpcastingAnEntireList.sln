@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpcastingAnEntireList", "UpcastingAnEntireList.csproj", "{D5605279-990F-4245-A1D2-B13AB68E9AFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5605279-990F-4245-A1D2-B13AB68E9AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5605279-990F-4245-A1D2-B13AB68E9AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5605279-990F-4245-A1D2-B13AB68E9AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5605279-990F-4245-A1D2-B13AB68E9AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70DCEBFE-AB26-4F16-A7A2-9AD3086DA8C1}
+	EndGlobalSection
+EndGlobal
