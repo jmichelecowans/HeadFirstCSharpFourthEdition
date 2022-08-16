@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FinallyBlockExample": {
+      "commandName": "Project",
+      "commandLineArgs": "finally-block-example.txt"
+    }
+  }
+}
