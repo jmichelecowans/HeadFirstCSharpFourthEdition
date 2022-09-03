@@ -1,0 +1,75 @@
+﻿@page "/"
+
+<div class="container">
+    <div class="row">
+        <div class="col-5">
+            <div class="row">
+                <label for="deck1" accesskey="o">
+                    <strong>Deck <span style="text-decoration: underline">O</span>ne</strong>
+                </label>
+                <select @bind="twoDecks.LeftCardSelected" class="custom-select" size="10" id="deck1">
+                    @for (int i = 0; i < twoDecks.LeftDeckCount; i++)
+                    {
+                        <option value="@i" @onkeypress="LeftKeyHandler" @ondblclick="() => twoDecks.MoveCard(Direction.LeftToRight)">@twoDecks.LeftDeckCardName(i)</option>
+                    }
+                </select>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col mt-2" accesskey="s" @onclick="twoDecks.Shuffle">
+                    <span style="text-decoration: underline">S</span>huffle
+                </button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col mt-2" accesskey="r" @onclick="twoDecks.Reset">
+                    <span style="text-decoration: underline">R</span>eset
+                </button>
+            </div>
+            <div class="row">
+                <h2>@(twoDecks.LeftDeckCount > 0 ? twoDecks.LeftDeckCardName(twoDecks.LeftCardSelected) : "")</h2>
+            </div>
+        </div>
+        <div class="col-1" />
+        <div class="col-5">
+            <div class="row">
+                <label for="deck2" accesskey="w">
+                    <strong>Deck T<span style="text-decoration: underline">w</span>o</strong>
+                </label>
+                <select @bind="twoDecks.RightCardSelected" class="custom-select" size="10" id="deck2">
+                    @for (int i = 0; i < twoDecks.RightDeckCount; i++)
+                    {
+                        <option value="@i" @onkeypress="RightKeyHandler" @ondblclick="() => twoDecks.MoveCard(Direction.RightToLeft)">@twoDecks.RightDeckCardName(i)</option>
+                    }
+                </select>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col mt-2" accesskey="c" @onclick="twoDecks.Clear">
+                    <span style="text-decoration: underline">C</span>lear
+                </button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col mt-2" accesskey="t" @onclick="twoDecks.Sort">
+                    Sor<span style="text-decoration: underline">t</span>
+                </button>
+            </div>
+            <div class="row">
+                <h2>@(twoDecks.RightDeckCount > 0 ? twoDecks.RightDeckCardName(twoDecks.RightCardSelected) : "")</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private readonly TwoDecks twoDecks = new();
+
+    private void LeftKeyHandler(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+            twoDecks.MoveCard(Direction.LeftToRight);
+    }
+
+    private void RightKeyHandler(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+            twoDecks.MoveCard(Direction.RightToLeft);
+    }
+}
